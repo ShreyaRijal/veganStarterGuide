@@ -1,9 +1,30 @@
+:root {
+  --orange: #d06224;
+  --burntOrange: #ae431e;
+  --green: #8a8635;
+  --lightBrown: #e9c891;
+  --darkGrey: #3e3939;
+  --black: #2c2727;
+  --white: #f6f4f4;
+}
+
 html,
 body {
-  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Poppins';
+  color: var(--darkGrey);
+  background-color: var(--lightBrown);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Poppins-Bold.ttf');
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 8vh;
 }
 
 a {
@@ -13,14 +34,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }
