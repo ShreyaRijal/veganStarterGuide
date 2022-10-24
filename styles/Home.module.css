@@ -10,3 +10,9 @@
 .accordiansContainer {
   margin: 1vh 0;
 }
+
+.cardsGrid{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, 420px );
+  column-gap: 20px;
+}
