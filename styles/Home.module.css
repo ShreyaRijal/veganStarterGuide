@@ -1,5 +1,5 @@
 .mainContainer {
-  padding: 2px 20px;
+  padding: 0.1vw 2vh;
 }
 
 .header {
@@ -9,10 +9,4 @@
 
 .accordiansContainer {
   margin: 1vh 0;
-}
-
-.cardsGrid{
-  display: grid;
-  grid-template-columns: repeat( auto-fit, 420px );
-  column-gap: 20px;
 }

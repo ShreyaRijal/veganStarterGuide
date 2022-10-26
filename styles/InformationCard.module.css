@@ -1,0 +1,27 @@
+.title{
+    font-size: x-large;
+    color: rgb(var(--white));
+    margin-bottom: 1vh;
+}
+
+.information{
+    background-color: rgb(var(--white), 0.8);
+    padding: 1vh;
+    margin-left: 1vw;
+
+}
+
+.infoGrid{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    row-gap: 1vw;
+}
+
+@media (min-width:701px) {
+    .infoGrid{
+        grid-template-columns: auto 110px;
+        column-gap: 2vh;
+    }
+}
+

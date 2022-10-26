@@ -1,0 +1,11 @@
+
+.cardsGrid{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, 420px );
+    column-gap: 1.1vw;
+  }
+  
+.endNote{
+    color: rgb(var(--white));
+    font-size: x-large;
+}  
