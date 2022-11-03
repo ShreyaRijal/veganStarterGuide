@@ -1,0 +1,14 @@
+.expertTipContent{
+    color: rgb(var(--white));
+    font-family: 'Poppins-Bold';
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1vw;
+    background-color: var(--orange);
+    padding: 0 0.5vw;
+    border-radius: 4px;
+}
+
+.sparkles{
+    align-self: center;
+}

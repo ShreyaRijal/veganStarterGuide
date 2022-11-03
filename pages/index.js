@@ -2,10 +2,11 @@ import Image from "next/image";
 
 import styles from "../styles/Home.module.css";
 import Accordian from "../components/Accordian";
-import Card from "../components/Card";
+import Card from "../components/ImageCard";
 import GeneralCard from "../components/GeneralCard";
 import SectionOne from "../components/SectionOne";
 import SectionTwo from "../components/SectionTwo";
+import SectionThree from "../components/SectionThree";
 
 export default function Home() {
   return (
@@ -28,14 +29,14 @@ export default function Home() {
             <SectionTwo />
           </Accordian>
           <Accordian accordianHeader={"Must haves in your pantry"}>
-            <div>123</div>
+            <SectionThree />
           </Accordian>
           <Accordian
             accordianHeader={
               "Easy vegan recipes to get you started straight away"
             }
           >
-            <div>123</div>
+            <div>1234</div>
           </Accordian>
         </div>
       </div>

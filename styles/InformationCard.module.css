@@ -1,14 +1,15 @@
 .title{
-    font-size: x-large;
-    color: rgb(var(--white));
+    font-size: large;
+    font-family: 'Poppins-Bold';
+    color: var(--black);
     margin-bottom: 1vh;
 }
 
 .information{
     background-color: rgb(var(--white), 0.8);
     padding: 1vh;
-    margin-left: 1vw;
-
+    border-radius: 4px;
+    font-size: large;
 }
 
 .infoGrid{

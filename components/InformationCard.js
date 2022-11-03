@@ -6,7 +6,7 @@ import styles from "../styles/InformationCard.module.css";
 
 export default function InformationCard({ title, information, imageUrl }) {
   return (
-    <GeneralCard bgColour="var(--orange)" width="98%">
+    <GeneralCard width="98%">
       <div className={styles.title}>{title}</div>
       <div className={styles.infoGrid}>
         <div className={styles.information}>{information}</div>
