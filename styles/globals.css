@@ -18,7 +18,7 @@ body {
   background-color: var(--lightBrown);
 }
 
-a{
+a {
   color: var(--blue);
   text-decoration: none;
 }
@@ -41,4 +41,9 @@ h1 {
 
 * {
   box-sizing: border-box;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 330px);
 }

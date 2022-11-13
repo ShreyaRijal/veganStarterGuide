@@ -1,9 +1,8 @@
-import ImageCard from "./ImageCard";
-import styles from "../styles/SectionThree.module.css";
+import ImageCard from './ImageCard';
 
 export default function SectionThree() {
   return (
-    <div className={styles.cardsGrid}>
+    <div className="cardsGrid">
       <ImageCard
         imageUrl="/flour.jpg"
         cardTitle="Vital wheat gluten (VWG)"
