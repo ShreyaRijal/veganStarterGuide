@@ -25,9 +25,9 @@ export default function ImageCard({
       <div className={styles.cardText}>
         {cardText}
         {sourceUrl ? (
-          <>
+          <span className={styles.readMoreText}>
             Read more <a href={sourceUrl}>here</a>
-          </>
+          </span>
         ) : null}
       </div>
       {expertTip ? <ExpertTip tip={expertTip} /> : null}
