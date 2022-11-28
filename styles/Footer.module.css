@@ -1,0 +1,10 @@
+.footer {
+  margin: auto;
+  text-align: center;
+}
+
+.line {
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}

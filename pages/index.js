@@ -2,16 +2,26 @@ import Image from 'next/image';
 
 import styles from '../styles/Home.module.css';
 import Accordian from '../components/Accordian';
-import Card from '../components/ImageCard';
-import GeneralCard from '../components/GeneralCard';
 import SectionOne from '../components/SectionOne';
 import SectionTwo from '../components/SectionTwo';
 import SectionThree from '../components/SectionThree';
 import SectionFour from '../components/SectionFour';
+import Footer from '../components/Footer';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>Vegan Starter Guide</title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Tips to start your vegan journey. Includes what to stock up in your pantry and easy vegan recipes"
+        />
+        <meta charset="UTF-8" />
+      </Head>
       <div className={styles.header}>
         <Image
           src="/veganStarterGuideHeaderImage.png"
@@ -39,6 +49,7 @@ export default function Home() {
           >
             <SectionFour />
           </Accordian>
+          <Footer />
         </div>
       </div>
     </div>

@@ -50,7 +50,7 @@ const recipes = [
       'Pinch of salt',
       'Sesame seeds',
       'Spring onion',
-      '*Sauce*:',
+      'SAUCE:',
       ' 2 Tbsp gochujang',
       '1 Tbsp unsalted peanut butter',
       '1/2 Tbsp sugar',
@@ -139,7 +139,7 @@ const recipes = [
     ],
   },
   {
-    title: 'Bean and Pepper Fajitas (Serves 3)',
+    title: 'Bean and Pepper Fajitas (Serves 3-4)',
     image: '/fajitas',
     ingredients: [
       '1 Onion',
