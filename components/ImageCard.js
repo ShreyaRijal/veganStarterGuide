@@ -9,8 +9,8 @@ export default function ImageCard({
   cardText,
   cardTitle,
   sourceUrl,
+  readMoreText,
   expertTip,
-  shadow,
   isClickable,
 }) {
   return (
@@ -25,9 +25,9 @@ export default function ImageCard({
       <div className={styles.cardText}>
         {cardText}
         {sourceUrl ? (
-          <span className={styles.readMoreText}>
-            Read more <a href={sourceUrl}>here</a>
-          </span>
+          <a className={styles.readMoreText} href={sourceUrl}>
+            {readMoreText} here
+          </a>
         ) : null}
       </div>
       {expertTip ? <ExpertTip tip={expertTip} /> : null}
