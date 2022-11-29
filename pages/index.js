@@ -13,6 +13,8 @@ export default function Home() {
   return (
     <div>
       <Head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7977963803436655"
+        crossorigin="anonymous"></script>
         <title>Vegan Starter Guide</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
