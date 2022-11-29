@@ -20,6 +20,7 @@ export default function ImageCard({
         alt={'cardImageFor' + imageUrl}
         width="420px"
         height="250px"
+        layout="intrinsic"
       />
       <div className={styles.cardTitle}>{cardTitle}</div>
       <div className={styles.cardText}>
