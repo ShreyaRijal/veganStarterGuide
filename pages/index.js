@@ -26,6 +26,12 @@ export default function Home() {
           content="Tips to start your vegan journey. Includes what to stock up in your pantry and easy vegan recipes"
         />
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+          name="keywords"
+          content="vegan, vegan starter guide, vegan recipes, healthy recipes, plant based, healthy living, eat well, save our planet"
+        />
+        <meta name="author" content="Shreya Rijal"></meta>
       </Head>
       <div className={styles.header}>
         <Image
