@@ -1,13 +1,13 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import styles from '../styles/Home.module.css';
-import Accordian from '../components/Accordian';
-import SectionOne from '../components/SectionOne';
-import SectionTwo from '../components/SectionTwo';
-import SectionThree from '../components/SectionThree';
-import SectionFour from '../components/SectionFour';
-import Footer from '../components/Footer';
-import Head from 'next/head';
+import styles from "../styles/Home.module.css";
+import Accordion from "../components/Accordion";
+import SectionOne from "../components/SectionOne";
+import SectionTwo from "../components/SectionTwo";
+import SectionThree from "../components/SectionThree";
+import SectionFour from "../components/SectionFour";
+import Footer from "../components/Footer";
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -43,23 +43,23 @@ export default function Home() {
         />
       </div>
       <div className={styles.mainContainer}>
-        <div className={styles.accordiansContainer}>
-          <Accordian accordianHeader="Remember why you are doing this">
+        <div className={styles.accordionsContainer}>
+          <Accordion accordionHeader="Remember why you are doing this">
             <SectionOne />
-          </Accordian>
-          <Accordian accordianHeader={'General tips'}>
+          </Accordion>
+          <Accordion accordionHeader={"General tips"}>
             <SectionTwo />
-          </Accordian>
-          <Accordian accordianHeader={'Must haves in your pantry'}>
+          </Accordion>
+          <Accordion accordionHeader={"Must haves in your pantry"}>
             <SectionThree />
-          </Accordian>
-          <Accordian
-            accordianHeader={
-              'Easy vegan recipes to get you started straight away'
+          </Accordion>
+          <Accordion
+            accordionHeader={
+              "Easy vegan recipes to get you started straight away"
             }
           >
             <SectionFour />
-          </Accordian>
+          </Accordion>
           <Footer />
         </div>
       </div>

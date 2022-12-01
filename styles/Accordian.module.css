@@ -20,12 +20,12 @@
   border: none;
   border-bottom: 1px solid var(--darkGrey);
   font-size: x-large;
-  font-family: 'Poppins-Bold';
+  font-family: "Poppins-Bold";
   transition: 0.4s;
   border-radius: 4px;
 }
 
-.accordianBtn {
+.accordionBtn {
   font-size: 5vh;
   margin-left: 0.2vw;
 }
@@ -45,12 +45,12 @@
   border-bottom-right-radius: 4px;
 }
 
-@media (max-width:1150px){
-  .accordion{
+@media (max-width: 1150px) {
+  .accordion {
     width: 100%;
   }
 
-  .panel{
+  .panel {
     width: auto;
     margin-right: 0.5vw;
   }

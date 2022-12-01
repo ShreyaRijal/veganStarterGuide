@@ -1,26 +1,26 @@
-import { useState } from 'react';
-import styles from '../styles/Accordian.module.css';
+import { useState } from "react";
+import styles from "../styles/Accordion.module.css";
 
-export default function Accordian({ accordianHeader, children }) {
-  const [isAccordianOpen, setIsAccordianOpen] = useState(true);
+export default function Accordion({ accordionHeader, children }) {
+  const [isAccordionOpen, setIsAccordionOpen] = useState(true);
   return (
     <div className={styles.accordionContainer}>
       <button
         onClick={() => {
-          setIsAccordianOpen(!isAccordianOpen);
+          setIsAccordionOpen(!isAccordionOpen);
         }}
         className={styles.accordion}
       >
-        {accordianHeader}
-        {isAccordianOpen ? (
-          <div className={styles.accordianBtn}>-</div>
+        {accordionHeader}
+        {isAccordionOpen ? (
+          <div className={styles.accordionBtn}>-</div>
         ) : (
-          <div className={styles.accordianBtn}>+</div>
+          <div className={styles.accordionBtn}>+</div>
         )}
       </button>
       <div
         className={styles.panel}
-        style={isAccordianOpen ? { display: 'block' } : { display: 'none' }}
+        style={isAccordionOpen ? { display: "block" } : { display: "none" }}
       >
         {children}
       </div>
