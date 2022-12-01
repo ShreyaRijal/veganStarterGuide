@@ -5,7 +5,7 @@ import styles from "../styles/SectionOne.module.css";
 export default function SectionOne() {
   return (
     <div>
-      <div className={styles.cardsGrid}>
+      <div className="cardsGrid">
         <ImageCard
           imageUrl="/fishingLines.jpg"
           cardText="Our waters are severely over-fished. Our planet's survival depends on healthy oceans and seas with a rich biodiversity."

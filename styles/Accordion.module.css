@@ -48,6 +48,7 @@
 @media (max-width: 1150px) {
   .accordion {
     width: 100vw;
+    row-gap: 2vh;
   }
 
   .panel {

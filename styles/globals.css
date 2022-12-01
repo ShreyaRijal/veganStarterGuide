@@ -54,6 +54,6 @@ h3, h4, p{
 
 .cardsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 330px);
+  grid-template-columns: repeat(auto-fit, 310px);
   row-gap: 1vh;
 }
