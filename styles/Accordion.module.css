@@ -37,7 +37,7 @@
 
 .panel {
   width: 77.7vw;
-  padding: 0 1vw;
+  padding: 0.1vw 1vh;
   margin-left: 2vw;
   background-color: rgba(var(--green), 0.2);
   overflow: hidden;
@@ -47,7 +47,7 @@
 
 @media (max-width: 1150px) {
   .accordion {
-    width: 100%;
+    width: 100vw;
   }
 
   .panel {

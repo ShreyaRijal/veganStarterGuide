@@ -1,6 +1,6 @@
-import styles from '../styles/Modal.module.css';
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import styles from "../styles/Modal.module.css";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Modal({
   title,
@@ -14,7 +14,7 @@ export default function Modal({
     <>
       {showModal ? (
         <div className={styles.modal}>
-          <h2 className={styles.itemHeader}>{title}</h2>
+          <h3 className={styles.itemHeader}>{title}</h3>
           <div
             className={styles.itemClose}
             onClick={() => {
@@ -24,7 +24,7 @@ export default function Modal({
             X
           </div>
           <div className={styles.itemIngredients}>
-            <div className={styles.bold}>Ingredients</div>
+            <h4 className={styles.bold}>Ingredients</h4>
             {
               <ul>
                 {ingredients.map((ingredient, index) => {
@@ -34,7 +34,7 @@ export default function Modal({
             }
           </div>
           <div className={styles.itemInstructions}>
-            <div className={styles.bold}>Instructions</div>
+            <h4 className={styles.bold}>Instructions</h4>
             {
               <ul>
                 {instructions.map((instruction, index) => {
@@ -46,7 +46,7 @@ export default function Modal({
           <div className={styles.itemImage}>
             <Image
               src={image}
-              alt={'ImageFor' + image}
+              alt={"ImageFor" + image}
               width="520px"
               height="520px"
             />

@@ -24,14 +24,14 @@ export default function ImageCard({
         layout="intrinsic"
       />
       <div className={styles.cardTitle}>{cardTitle}</div>
-      <div className={styles.cardText}>
+      <p className={styles.cardText}>
         {cardText}
         {sourceUrl ? (
           <a className={styles.readMoreText} href={sourceUrl}>
             {readMoreText} here
           </a>
         ) : null}
-      </div>
+      </p>
       {expertTip ? <ExpertTip tip={expertTip} /> : null}
     </GeneralCard>
   );

@@ -11,7 +11,7 @@ export default function Accordion({ accordionHeader, children }) {
         }}
         className={styles.accordion}
       >
-        {accordionHeader}
+        <h2> {accordionHeader}</h2>
         {isAccordionOpen ? (
           <div className={styles.accordionBtn}>-</div>
         ) : (

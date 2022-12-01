@@ -20,6 +20,9 @@
 
 .itemHeader {
   grid-column: 1 / span 3;
+  margin-top: 1vh;
+  font-size: x-large;
+  font-family: 'Poppins-Bold';
 }
 
 .itemClose {
@@ -50,7 +53,10 @@
   grid-row: 2;
   justify-self: center;
   padding-left: 1vw;
-  width: 26vw;
+}
+
+.itemImage > span > img{
+  border-radius: 50%;
 }
 
 @media (max-width: 1290px) {

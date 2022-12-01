@@ -34,13 +34,6 @@ export default function Home() {
         <meta name="author" content="Shreya Rijal"></meta>
       </Head>
       <div className={styles.header}>
-        {/* <Image
-          src="/veganStarterGuideHeaderImage.png"
-          alt="headerImage"
-          width="1920px"
-          height="250px"
-          layout="intrinsic"
-        /> */}
         <h1 className={styles.headerText}>Vegan Starter Guide</h1>
       </div>
       <div className={styles.mainContainer}>

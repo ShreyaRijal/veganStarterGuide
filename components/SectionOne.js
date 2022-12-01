@@ -49,13 +49,13 @@ export default function SectionOne() {
           altText="hospital room with beds"
         />
         <GeneralCard bgColour="rgb(var(--orange))">
-          <div className={styles.endNote}>
+          <p className={styles.endNote}>
             There are many more reasons to follow the vegan lifestyle, these are
             just my main points of reflection. <br />
             <br /> Whatever your reasoning may be, reflect on them when you are
             struggling with cravings, societal pressures, and cultural
             pressures.
-          </div>
+          </p>
         </GeneralCard>
       </div>
     </div>
