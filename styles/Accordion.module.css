@@ -18,7 +18,7 @@
   text-align: left;
   align-items: center;
   border: none;
-  border-bottom: 1px solid var(--darkGrey);
+  border-bottom: 1px solid rgb(var(--darkGrey));
   font-size: x-large;
   font-family: "Poppins-Bold";
   transition: 0.4s;
@@ -32,7 +32,7 @@
 
 .active,
 .accordion:hover {
-  background-color: var(--darkGreen);
+  background-color: rgb(var(--darkGreen));
 }
 
 .panel {

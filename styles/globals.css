@@ -1,25 +1,25 @@
 :root {
-  --orange: #d06224;
-  --burntOrange: #ae431e;
+  --orange:208, 98, 36;
+  --burntOrange: 174, 67, 30;
   --green: 122, 138, 11;
-  --darkGreen: #596313;
-  --lightBrown: #e9c891;
-  --darkGrey: #3e3939;
-  --black: #2c2727;
+  --darkGreen: 89, 99, 19;
+  --lightBrown: 233, 200, 145;
+  --darkGrey: 62, 57, 57;
+  --black: 44, 39, 39;
   --white: 246, 244, 244;
-  --blue: #00329d;
+  --blue: 0, 50, 157;
 }
 
 html,
 body {
   margin: 0;
   font-family: 'Poppins';
-  color: var(--darkGrey);
-  background-color: var(--lightBrown);
+  color: rgb(var(--darkGrey));
+  background-color: rgb(var(--lightBrown));
 }
 
 a {
-  color: var(--blue);
+  color: rgb(var(--blue));
   text-decoration: none;
 }
 

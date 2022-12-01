@@ -1,11 +1,12 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import styles from '../styles/ImageCard.module.css';
-import GeneralCard from './GeneralCard';
-import ExpertTip from './ExpertTip';
+import styles from "../styles/ImageCard.module.css";
+import GeneralCard from "./GeneralCard";
+import ExpertTip from "./ExpertTip";
 
 export default function ImageCard({
   imageUrl,
+  altText,
   cardText,
   cardTitle,
   sourceUrl,
@@ -14,10 +15,10 @@ export default function ImageCard({
   isClickable,
 }) {
   return (
-    <GeneralCard bgColour={'rgba(var(--white), 0.8)'} isClickable={isClickable}>
+    <GeneralCard bgColour={"rgba(var(--white), 0.8)"} isClickable={isClickable}>
       <Image
         src={imageUrl}
-        alt={'cardImageFor' + imageUrl}
+        alt={"Image for " + altText}
         width="420px"
         height="250px"
         layout="intrinsic"

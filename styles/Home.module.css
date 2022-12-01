@@ -6,6 +6,18 @@
   margin: 0 3px;
 }
 
+.headerText{
+  text-align: center;
+  padding: 1vh 1vw;
+  width: 100vw;
+  height: 15vh;
+  background-image: url("/veganStarterGuideHeaderImage.png");
+  background-size: 100vh;
+  background-blend-mode: color;
+  text-shadow: 0px 0px 4px rgb(var(--white));
+  font-family: 'Poppins-Bold';
+}
+
 .accordionsContainer {
   margin: 1vh 0;
 }
