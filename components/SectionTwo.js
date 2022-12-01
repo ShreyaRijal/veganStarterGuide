@@ -16,6 +16,7 @@ export default function SectionTwo() {
         Actually, even people that eat animal products sometimes need to supplement 
         it."
         imageUrl="/pills.png"
+        imageAltText="pills"
       />
       <InformationCard
         title="Keep an eye on symptoms"
@@ -24,6 +25,7 @@ export default function SectionTwo() {
           be lacking something in your new diet. Visit your health provider to 
           understand what your body might need more or less of."
         imageUrl="/symptoms.png"
+        imageAltText="symptoms on body"
       />
       <InformationCard
         title="Keep your diet varied"
@@ -35,6 +37,7 @@ export default function SectionTwo() {
           There are also great vegan alternatives out there for any cravings you might have
           such as plant based cheese. Eat these in moderation as you would regularly."
         imageUrl="/shopping.png"
+        imageAltText="shopping cart"
       />
       <InformationCard
         title="Don't worry about protein"
@@ -44,6 +47,7 @@ export default function SectionTwo() {
           also use protein supplements but check the label to see if it's a vegan source
           of protein."
         imageUrl="/muscles.png"
+        imageAltText="muscular arm"
       />
       <InformationCard
         title="Take it easy on yourself"
@@ -56,6 +60,7 @@ export default function SectionTwo() {
           environment and you might notice an improvement in your health. Keep going,
           you'll find your rhythm."
         imageUrl="/earth.png"
+        imageAltText="earth"
       />
     </div>
   );

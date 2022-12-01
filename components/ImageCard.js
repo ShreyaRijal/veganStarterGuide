@@ -18,7 +18,7 @@ export default function ImageCard({
     <GeneralCard bgColour={"rgba(var(--white), 0.8)"} isClickable={isClickable}>
       <Image
         src={imageUrl}
-        alt={"Image for " + altText}
+        alt={altText}
         width="420px"
         height="250px"
         layout="intrinsic"

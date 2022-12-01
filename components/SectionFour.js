@@ -181,6 +181,8 @@ export default function SectionFour() {
   const [currentImage, setCurrentImage] = useState();
   const [currentIngredients, setCurrentIngredients] = useState();
   const [currentInstructions, setCurrentInstructions] = useState();
+  const [currentAltTextForModalImage, setCurrentAltTextForModalImage] =
+    useState();
 
   return (
     <div>
@@ -192,6 +194,7 @@ export default function SectionFour() {
               onClick={() => {
                 setOpenModal(true);
                 setCurrentTitle(recipe.title);
+                setCurrentAltTextForModalImage(recipe.title);
                 setCurrentImage(recipe.image + "Full.jpg");
                 setCurrentIngredients(recipe.ingredients);
                 setCurrentInstructions(recipe.instructions);
@@ -214,6 +217,7 @@ export default function SectionFour() {
         image={currentImage}
         ingredients={currentIngredients}
         instructions={currentInstructions}
+        imageAltText={currentAltTextForModalImage}
       />
     </div>
   );

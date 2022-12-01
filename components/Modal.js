@@ -9,6 +9,7 @@ export default function Modal({
   instructions,
   showModal,
   setShowModal,
+  imageAltText,
 }) {
   return (
     <>
@@ -46,7 +47,7 @@ export default function Modal({
           <div className={styles.itemImage}>
             <Image
               src={image}
-              alt={"ImageFor" + image}
+              alt={imageAltText}
               width="520px"
               height="520px"
             />
