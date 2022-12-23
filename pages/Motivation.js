@@ -1,8 +1,8 @@
-import ImageCard from "./ImageCard";
-import GeneralCard from "./GeneralCard";
-import styles from "../styles/SectionOne.module.css";
+import ImageCard from "../components/ImageCard";
+import GeneralCard from "../components/GeneralCard";
+import styles from "../styles/Motivation.module.css";
 
-export default function SectionOne() {
+export default function Motivation() {
   return (
     <div>
       <div className="cardsGrid">

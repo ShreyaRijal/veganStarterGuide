@@ -1,6 +1,6 @@
-import ImageCard from "./ImageCard";
+import ImageCard from "../components/ImageCard";
 
-export default function SectionThree() {
+export default function Pantry() {
   return (
     <div className="cardsGrid">
       <ImageCard

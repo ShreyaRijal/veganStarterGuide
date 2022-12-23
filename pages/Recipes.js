@@ -1,6 +1,6 @@
 import { useState } from "react";
-import ImageCard from "./ImageCard";
-import Modal from "./Modal";
+import ImageCard from "../components/ImageCard";
+import Modal from "../components/Modal";
 
 const recipes = [
   {
@@ -175,7 +175,7 @@ const recipes = [
   },
 ];
 
-export default function SectionFour() {
+export default function Recipes() {
   const [openModal, setOpenModal] = useState(false);
   const [currentTitle, setCurrentTitle] = useState();
   const [currentImage, setCurrentImage] = useState();

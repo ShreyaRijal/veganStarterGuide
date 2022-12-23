@@ -15,7 +15,6 @@ body {
   margin: 0;
   font-family: 'Poppins';
   color: rgb(var(--darkGrey));
-  background-color: rgb(var(--lightBrown));
 }
 
 a {

@@ -1,7 +1,7 @@
-import GeneralCard from "./GeneralCard";
-import InformationCard from "./InformationCard";
+import GeneralCard from "../components//GeneralCard";
+import InformationCard from "../components/InformationCard";
 
-export default function SectionTwo() {
+export default function Tips() {
   return (
     <div>
       <InformationCard
