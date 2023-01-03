@@ -1,4 +1,4 @@
-import Motivation from "./Motivation";
+import Motivation from "./why-be-vegan";
 
 export default function Home() {
   return (

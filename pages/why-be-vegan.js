@@ -1,10 +1,11 @@
 import ImageCard from "../components/ImageCard";
 import GeneralCard from "../components/GeneralCard";
-import styles from "../styles/Motivation.module.css";
+import styles from "../styles/why-be-vegan.module.css";
 
 export default function Motivation() {
   return (
     <div>
+      Animal rights Environment Personal health
       <div className="cardsGrid">
         <ImageCard
           imageUrl="/fishingLines.jpg"

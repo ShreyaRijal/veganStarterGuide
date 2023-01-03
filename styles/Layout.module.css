@@ -17,6 +17,10 @@
   font-family: 'Poppins-Bold';
 }
 
+.navButton{
+  
+}
+
 @media (max-width:765px) {
   .headerText{
     font-size: 55px;

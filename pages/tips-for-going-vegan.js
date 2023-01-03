@@ -1,4 +1,4 @@
-import GeneralCard from "../components//GeneralCard";
+import GeneralCard from "../components/GeneralCard";
 import InformationCard from "../components/InformationCard";
 
 export default function Tips() {

@@ -1,4 +1,4 @@
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Layout.module.css";
 import Footer from "./Footer";
 import Head from "next/head";
 import { useRouter } from "next/router";
@@ -33,10 +33,24 @@ export default function Layout({ children }) {
         <h1 className={styles.headerText}>Vegan Starter Guide</h1>
       </div>
       <div className={styles.mainContainer}>
-        <button onClick={() => router.push("/Motivation")}>Motivation</button>
-        <button onClick={() => router.push("/Tips")}>Tips</button>
-        <button onClick={() => router.push("/Pantry")}>Pantry</button>
-        <button onClick={() => router.push("/Recipes")}>Recipes</button>
+        <button
+          className={styles.navButton}
+          onClick={() => router.push("/why-be-vegan")}
+        >
+          Why be vegan
+        </button>
+        <button onClick={() => router.push("/tips-for-going-vegan")}>
+          Tips
+        </button>
+        <button onClick={() => router.push("/vegan-things-for-pantry")}>
+          Stock up your pantry
+        </button>
+        <button onClick={() => router.push("/common-vegan-substitutes")}>
+          Common substitutes
+        </button>
+        <button onClick={() => router.push("/easy-vegan-recipes")}>
+          Easy recipes
+        </button>
         <main>{children}</main>
         <Footer />
       </div>
