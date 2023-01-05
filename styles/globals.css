@@ -5,6 +5,7 @@
   --darkGreen: 89, 99, 19;
   --lightBrown: 233, 200, 145;
   --darkGrey: 62, 57, 57;
+  --grey: 162, 157, 157;
   --black: 44, 39, 39;
   --white: 246, 244, 244;
   --blue: 0, 50, 157;
@@ -33,9 +34,9 @@ a {
 }
 
 h1 {
-  text-align: center;
-  margin: 0;
-  font-size: 70px;
+  color: rgb(var(--white));
+  margin:0;
+  padding-left: 1vw;
 }
 
 h2{

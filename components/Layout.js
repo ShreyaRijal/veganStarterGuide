@@ -1,10 +1,62 @@
 import styles from "../styles/Layout.module.css";
 import Footer from "./Footer";
+
 import Head from "next/head";
+import Image from "next/image";
+
 import { useRouter } from "next/router";
+import { useEffect, useState, useCallback } from "react";
+
+//TO:DO use shallow routing https://nextjs.org/docs/routing/shallow-routing
+
+const useMediaQuery = (width) => {
+  const [targetReached, setTargetReached] = useState(false);
+
+  const updateTarget = useCallback((e) => {
+    if (e.matches) setTargetReached(true);
+    else setTargetReached(false);
+  }, []);
+
+  useEffect(() => {
+    const media = window.matchMedia(`(max-width: ${width}px)`);
+    media.addEventListener("change", updateTarget);
+
+    // Check on mount (callback is not called until a change occurs)
+    if (media.matches) setTargetReached(true);
+
+    return () => media.removeEventListener("change", updateTarget);
+  }, []);
+
+  return targetReached;
+};
 
 export default function Layout({ children }) {
   const router = useRouter();
+
+  const [currentTab, setCurrentTab] = useState(0);
+  const [isNavOpen, setIsNavOpen] = useState(true);
+
+  const tabs = [
+    { order: 0, route: "/why-be-vegan", title: "Why be vegan" },
+    { order: 1, route: "/tips-for-going-vegan", title: "Tips for going vegan" },
+    {
+      order: 2,
+      route: "/vegan-things-for-pantry",
+      title: "Stock up your pantry",
+    },
+    {
+      order: 3,
+      route: "/common-vegan-substitutes",
+      title: "Common substitutes",
+    },
+    { order: 4, route: "/easy-vegan-recipes", title: "Easy recipes" },
+  ];
+  const isMobileDevice = useMediaQuery(1199);
+
+  useEffect(() => {
+    var tab = tabs.find((x) => x.route === router.pathname);
+    setCurrentTab(tab.order);
+  }, []);
 
   return (
     <>
@@ -29,29 +81,51 @@ export default function Layout({ children }) {
         />
         <meta name="author" content="Shreya Rijal"></meta>
       </Head>
-      <div className={styles.header}>
-        <h1 className={styles.headerText}>Vegan Starter Guide</h1>
-      </div>
-      <div className={styles.mainContainer}>
-        <button
-          className={styles.navButton}
-          onClick={() => router.push("/why-be-vegan")}
-        >
-          Why be vegan
-        </button>
-        <button onClick={() => router.push("/tips-for-going-vegan")}>
-          Tips
-        </button>
-        <button onClick={() => router.push("/vegan-things-for-pantry")}>
-          Stock up your pantry
-        </button>
-        <button onClick={() => router.push("/common-vegan-substitutes")}>
-          Common substitutes
-        </button>
-        <button onClick={() => router.push("/easy-vegan-recipes")}>
-          Easy recipes
-        </button>
-        <main>{children}</main>
+      {/* <div className={styles.header} /> */}
+      <div className={styles.siteGrid}>
+        <div className={styles.topNav}>
+          <h1 className={styles.headerText}>Vegan Starter Guide</h1>
+
+          <div className={styles.tabs}>
+            {isNavOpen || !isMobileDevice
+              ? tabs
+                  .sort((a, b) => b.order - a.order)
+                  .map((tab) => {
+                    return (
+                      <a
+                        key={tab.order}
+                        className={
+                          tab.order === currentTab ? styles.active : ""
+                        }
+                        onClick={() => {
+                          setCurrentTab(tab.order);
+                          router.push(tab.route);
+                        }}
+                      >
+                        {tab.title}
+                      </a>
+                    );
+                  })
+              : null}
+          </div>
+          <a
+            onClick={() => {
+              setIsNavOpen(!isNavOpen);
+            }}
+            className={styles.icon}
+          >
+            <Image
+              src="/hamburger.png"
+              alt="Hamburger menu"
+              width="23px"
+              height="23px"
+            />
+          </a>
+        </div>
+
+        <div className={styles.mainContainer}>
+          <main>{children}</main>
+        </div>
         <Footer />
       </div>
     </>
