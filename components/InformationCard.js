@@ -11,17 +11,19 @@ export default function InformationCard({
   imageAltText,
 }) {
   return (
-    <GeneralCard width="98%">
-      <h3 className={styles.title}>{title}</h3>
-      <div className={styles.infoGrid}>
-        <p className={styles.information}>{information}</p>
-        <Image
-          src={imageUrl}
-          alt={imageAltText}
-          width="110px"
-          height="100px"
-          layout="fixed"
-        />
+    <GeneralCard width="97vw" margin={0}>
+      <div className={styles.informationContainer}>
+        <h3 className={styles.title}>{title}</h3>
+        <div className={styles.infoGrid}>
+          <p className={styles.information}>{information}</p>
+          <Image
+            src={imageUrl}
+            alt={imageAltText}
+            width="100px"
+            height="100px"
+            layout="fixed"
+          />
+        </div>
       </div>
     </GeneralCard>
   );

@@ -5,7 +5,7 @@
 }
 
 .mainContainer {
-  padding: 0.1vh 1vw;
+  padding: 1vh 1vw;
 }
 
 .header{
@@ -26,12 +26,10 @@
   grid-template-columns: auto auto;
   overflow: hidden;
   background-color: rgb(var(--darkGrey));
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
 }
 
 .topNav a {
-  float: right;
+  float: left;
   color: rgb(var(--white));
   text-align: center;
   padding:15px;
@@ -39,14 +37,14 @@
 }
 
 .icon{
-  background: rgb(var(--grey));
+  background: rgb(var(--orange));
   position: absolute;
   top: 0;
   right: 0;
 }
 
 .topNav a:hover {
-  background-color: rgb(var(--white));
+  background-color: rgb(var(--grey));
   color: rgb(var(--darkGrey));
   cursor: pointer;
 }
@@ -54,8 +52,6 @@
 .topNav a.active {
   background-color: rgb(var(--orange));
   color: white;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
 }
 
 
@@ -115,6 +111,7 @@
 
 @media (max-width: 395px) {
   .mainContainer {
-    padding: 0.1vh 0.1vw;
+    padding: 0.3vh 0.3vw;
+    margin: 1vh 0;
   }
 }

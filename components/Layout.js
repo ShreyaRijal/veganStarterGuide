@@ -9,6 +9,22 @@ import { useEffect, useState, useCallback } from "react";
 
 //TO:DO use shallow routing https://nextjs.org/docs/routing/shallow-routing
 
+const tabs = [
+  { order: 0, route: "/why-be-vegan", title: "Why be vegan" },
+  { order: 1, route: "/tips-for-going-vegan", title: "Tips for going vegan" },
+  {
+    order: 2,
+    route: "/vegan-things-for-pantry",
+    title: "Stock up your pantry",
+  },
+  {
+    order: 3,
+    route: "/common-vegan-substitutes",
+    title: "Common substitutes",
+  },
+  { order: 4, route: "/easy-vegan-recipes", title: "Easy recipes" },
+];
+
 const useMediaQuery = (width) => {
   const [targetReached, setTargetReached] = useState(false);
 
@@ -36,26 +52,14 @@ export default function Layout({ children }) {
   const [currentTab, setCurrentTab] = useState(0);
   const [isNavOpen, setIsNavOpen] = useState(true);
 
-  const tabs = [
-    { order: 0, route: "/why-be-vegan", title: "Why be vegan" },
-    { order: 1, route: "/tips-for-going-vegan", title: "Tips for going vegan" },
-    {
-      order: 2,
-      route: "/vegan-things-for-pantry",
-      title: "Stock up your pantry",
-    },
-    {
-      order: 3,
-      route: "/common-vegan-substitutes",
-      title: "Common substitutes",
-    },
-    { order: 4, route: "/easy-vegan-recipes", title: "Easy recipes" },
-  ];
   const isMobileDevice = useMediaQuery(1199);
 
   useEffect(() => {
     var tab = tabs.find((x) => x.route === router.pathname);
-    setCurrentTab(tab.order);
+    if (tab) {
+      setCurrentTab(tab.order);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -88,24 +92,21 @@ export default function Layout({ children }) {
 
           <div className={styles.tabs}>
             {isNavOpen || !isMobileDevice
-              ? tabs
-                  .sort((a, b) => b.order - a.order)
-                  .map((tab) => {
-                    return (
-                      <a
-                        key={tab.order}
-                        className={
-                          tab.order === currentTab ? styles.active : ""
-                        }
-                        onClick={() => {
-                          setCurrentTab(tab.order);
-                          router.push(tab.route);
-                        }}
-                      >
-                        {tab.title}
-                      </a>
-                    );
-                  })
+              ? tabs.map((tab) => {
+                  console.log(tab);
+                  return (
+                    <a
+                      key={tab.order}
+                      className={tab.order === currentTab ? styles.active : ""}
+                      onClick={() => {
+                        setCurrentTab(tab.order);
+                        router.push(tab.route);
+                      }}
+                    >
+                      {tab.title}
+                    </a>
+                  );
+                })
               : null}
           </div>
           <a

@@ -1,9 +1,10 @@
-import styles from '../styles/GeneralCard.module.css';
+import styles from "../styles/GeneralCard.module.css";
 
 export default function GeneralCard({
   bgColour,
   height,
   width,
+  margin,
   isClickable,
   children,
 }) {
@@ -13,8 +14,9 @@ export default function GeneralCard({
         backgroundColor: bgColour,
         height: height,
         width: width,
+        margin: margin,
       }}
-      className={`${styles.card} ${isClickable ? styles.clickable : ''}`}
+      className={`${styles.card} ${isClickable ? styles.clickable : ""}`}
     >
       {children}
     </div>

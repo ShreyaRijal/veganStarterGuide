@@ -1,9 +1,11 @@
-import GeneralCard from "../components/GeneralCard";
 import InformationCard from "../components/InformationCard";
 
 export default function Tips() {
   return (
     <div>
+      <h2 className="title">
+        Here are some tips for when you first try veganism
+      </h2>
       <InformationCard
         title="You may need to supplement vitamin B12"
         information="Without enough vitamin B12, you might experience fatigue, 
@@ -56,7 +58,7 @@ export default function Tips() {
           the restaurant you're at doesn't offer any meal that's fully vegan, or
           you just really craved something. A lot of us grew up with animal products
           that were vital to our upbringing or culture. Even by following the vegan
-          lifestyle a little more, you are already having a profound imapact on the 
+          lifestyle a little more, you are already having a profound impact on the 
           environment and you might notice an improvement in your health. Keep going,
           you'll find your rhythm."
         imageUrl="/earth.png"

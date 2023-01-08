@@ -1,12 +1,18 @@
+.informationContainer{
+    background-color: rgba(var(--grey), 0.3);
+    padding:1vw;
+    border-radius: 4px;
+}
+
 .title{
     font-size: large;
     font-family: 'Poppins-Bold';
-    color: rgb(var(--black));
+    color: rgb(var(--darkGreen));
     margin-bottom: 1vh;
 }
 
 .information{
-    background-color: rgb(var(--white), 0.8);
+    background-color: rgb(var(--white));
     padding: 1vh;
     border-radius: 4px;
     font-size: large;

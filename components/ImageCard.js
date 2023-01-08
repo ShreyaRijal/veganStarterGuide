@@ -15,7 +15,7 @@ export default function ImageCard({
   isClickable,
 }) {
   return (
-    <GeneralCard bgColour={"rgba(var(--white), 0.8)"} isClickable={isClickable}>
+    <GeneralCard bgColour={"rgba(var(--white),1)"} isClickable={isClickable}>
       <Image
         src={imageUrl}
         alt={altText}
