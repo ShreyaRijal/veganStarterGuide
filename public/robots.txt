@@ -1,9 +1,9 @@
-# Group 1 
- User-agent: Googlebot 
- Disallow: /nogooglebot/ 
-  
- # Group 2 
- User-agent: * 
- Allow: / 
-  
- Sitemap: https://www.veganstarterguide.co.uk/sitemap.xml
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://veganstarterguide.co.uk
+
+# Sitemaps
+Sitemap: https://veganstarterguide.co.uk/sitemap.xml
