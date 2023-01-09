@@ -93,7 +93,6 @@ export default function Layout({ children }) {
           <div className={styles.tabs}>
             {isNavOpen || !isMobileDevice
               ? tabs.map((tab) => {
-                  console.log(tab);
                   return (
                     <a
                       key={tab.order}
