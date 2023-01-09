@@ -1,7 +1,7 @@
 .siteGrid{
   display: grid;
   grid-auto-flow: row;
-  grid-template-rows: 6vh auto 10vh;
+  grid-template-rows: 55px auto 10vh;
   height: 100vh;
 }
 
