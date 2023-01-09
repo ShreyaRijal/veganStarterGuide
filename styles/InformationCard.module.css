@@ -1,5 +1,5 @@
 .informationContainer{
-    background-color: rgba(var(--grey), 0.3);
+    background-color: rgba(var(--grey), 0.2);
     padding:1vw;
     border-radius: 4px;
 }
@@ -8,11 +8,9 @@
     font-size: large;
     font-family: 'Poppins-Bold';
     color: rgb(var(--darkGreen));
-    margin-bottom: 1vh;
 }
 
 .information{
-    background-color: rgb(var(--white));
     padding: 1vh;
     border-radius: 4px;
     font-size: large;
@@ -27,7 +25,7 @@
 
 @media (min-width:701px) {
     .infoGrid{
-        grid-template-columns: auto 110px;
+        grid-template-columns: auto auto;
         column-gap: 2vh;
     }
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ImageCard from "../components/ImageCard";
 import Modal from "../components/Modal";
+import styles from "../styles/easy-vegan-recipes.module.css";
 
 const recipes = [
   {
@@ -72,7 +73,7 @@ const recipes = [
     ],
   },
   {
-    title: "Fresh Tomato Pasta (Serves 3)",
+    title: "Fresh Tomato Pasta \n (Serves 3)",
     image: "/tomatoPasta",
     ingredients: [
       "3 Tbsp olive oil",
@@ -108,7 +109,7 @@ const recipes = [
     ],
   },
   {
-    title: "Chickpea Curry (Serves 4)",
+    title: "Chickpea Curry \n (Serves 4)",
     image: "/chickpeaCurry",
     ingredients: [
       "3 Tbsp vegetable oil",
@@ -186,29 +187,35 @@ export default function Recipes() {
 
   return (
     <div>
-      <div className="cardsGrid">
-        {recipes.map((recipe, index) => {
-          return (
-            <div
-              key={index}
-              onClick={() => {
-                setOpenModal(true);
-                setCurrentTitle(recipe.title);
-                setCurrentAltTextForModalImage(recipe.title);
-                setCurrentImage(recipe.image + "Full.jpg");
-                setCurrentIngredients(recipe.ingredients);
-                setCurrentInstructions(recipe.instructions);
-              }}
-            >
-              <ImageCard
-                imageUrl={recipe.image + ".jpg"}
-                cardTitle={recipe.title}
-                isClickable={true}
-                altText={recipe.title}
-              />
-            </div>
-          );
-        })}
+      <h2 className="title">
+        Here are some easy vegan recipes to get you started with that you
+        already have!
+      </h2>
+      <div className={styles.recipesContainer}>
+        <div className="cardsGrid">
+          {recipes.map((recipe, index) => {
+            return (
+              <div
+                key={index}
+                onClick={() => {
+                  setOpenModal(true);
+                  setCurrentTitle(recipe.title);
+                  setCurrentAltTextForModalImage(recipe.title);
+                  setCurrentImage(recipe.image + "Full.jpg");
+                  setCurrentIngredients(recipe.ingredients);
+                  setCurrentInstructions(recipe.instructions);
+                }}
+              >
+                <ImageCard
+                  imageUrl={recipe.image + ".jpg"}
+                  cardTitle={recipe.title}
+                  isClickable={true}
+                  altText={recipe.title}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
       <Modal
         showModal={openModal}

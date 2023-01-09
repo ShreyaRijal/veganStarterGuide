@@ -1,6 +1,6 @@
-.pantryContainer{
+.recipesContainer{
     background-color: rgba(var(--grey), 0.2);
     border-radius: 4px;
-    padding:8px;
-    margin:8px;
+    padding: 8px;
+    margin: 8px;
 }

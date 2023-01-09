@@ -52,7 +52,7 @@ export default function Layout({ children }) {
   const [currentTab, setCurrentTab] = useState(0);
   const [isNavOpen, setIsNavOpen] = useState(true);
 
-  const isMobileDevice = useMediaQuery(1199);
+  const isMobileDevice = useMediaQuery(1200);
 
   useEffect(() => {
     var tab = tabs.find((x) => x.route === router.pathname);

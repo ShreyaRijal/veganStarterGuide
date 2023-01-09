@@ -1,6 +1,7 @@
 .cardTitle {
   font-family: 'Poppins-Bold';
   font-size: larger;
+  white-space: pre-line;
 }
 
 .cardText {

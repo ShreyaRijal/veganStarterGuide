@@ -8,10 +8,12 @@ export default function InformationCard({
   title,
   information,
   imageUrl,
+  imageSize,
+  width,
   imageAltText,
 }) {
   return (
-    <GeneralCard width="97vw" margin={0}>
+    <GeneralCard width={width} margin={0}>
       <div className={styles.informationContainer}>
         <h3 className={styles.title}>{title}</h3>
         <div className={styles.infoGrid}>
@@ -19,8 +21,8 @@ export default function InformationCard({
           <Image
             src={imageUrl}
             alt={imageAltText}
-            width="100px"
-            height="100px"
+            width={`${imageSize}px`}
+            height={`${imageSize}px`}
             layout="fixed"
           />
         </div>

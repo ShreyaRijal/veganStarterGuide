@@ -1,7 +1,6 @@
 import ImageCard from "../components/ImageCard";
 import Accordion from "../components/Accordion";
 import GeneralCard from "../components/GeneralCard";
-import styles from "../styles/why-be-vegan.module.css";
 
 export default function Motivation() {
   return (
@@ -111,11 +110,11 @@ export default function Motivation() {
       </Accordion>
 
       <GeneralCard bgColour="rgb(var(--orange))" margin={0}>
-        <p className={styles.endNote}>
+        <p className="endNote">
           There are many more reasons to follow the vegan lifestyle, these are
-          just my main points of reflection. <br />
-          <br /> Whatever your reasoning may be, reflect on them when you are
-          struggling with cravings, societal pressures, and cultural pressures.
+          just my main points of reflection. Whatever your reasoning may be,
+          reflect on them when you are struggling with cravings, societal
+          pressures, and cultural pressures.
         </p>
       </GeneralCard>
     </div>

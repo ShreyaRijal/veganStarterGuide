@@ -19,6 +19,8 @@ export default function Tips() {
         it."
         imageUrl="/pills.png"
         imageAltText="pills"
+        imageSize={100}
+        width="97vw"
       />
       <InformationCard
         title="Keep an eye on symptoms"
@@ -28,6 +30,8 @@ export default function Tips() {
           understand what your body might need more or less of."
         imageUrl="/symptoms.png"
         imageAltText="symptoms on body"
+        imageSize={100}
+        width="97vw"
       />
       <InformationCard
         title="Keep your diet varied"
@@ -40,6 +44,8 @@ export default function Tips() {
           such as plant based cheese. Eat these in moderation as you would regularly."
         imageUrl="/shopping.png"
         imageAltText="shopping cart"
+        imageSize={100}
+        width="97vw"
       />
       <InformationCard
         title="Don't worry about protein"
@@ -50,6 +56,8 @@ export default function Tips() {
           of protein."
         imageUrl="/muscles.png"
         imageAltText="muscular arm"
+        imageSize={100}
+        width="97vw"
       />
       <InformationCard
         title="Take it easy on yourself"
@@ -63,6 +71,8 @@ export default function Tips() {
           you'll find your rhythm."
         imageUrl="/earth.png"
         imageAltText="earth"
+        imageSize={100}
+        width="97vw"
       />
     </div>
   );
