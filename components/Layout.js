@@ -100,7 +100,7 @@ export default function Layout({ children }) {
                       className={tab.order === currentTab ? styles.active : ""}
                       onClick={() => {
                         setCurrentTab(tab.order);
-                        router.push(tab.route);
+                        router.push(tab.route, undefined, { shallow: true });
                       }}
                     >
                       {tab.title}
